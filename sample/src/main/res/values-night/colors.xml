@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand palette: deep green, olive, beige, gold (night roles) -->
+    <color name="brand_dark_green">#13291F</color>
+    <color name="brand_olive">#4A4A1F</color>
+    <color name="brand_beige">#E3D7BC</color>
+    <color name="brand_gold">#D9B441</color>
+
+    <!-- Dark (night) theme roles -->
+    <color name="colorPrimary">#13291F</color>
+    <color name="colorPrimaryDark">#0B1B14</color>
+    <color name="colorAccent">#D9B441</color>
+
+    <color name="colorBackground">#16261C</color>
+    <color name="colorSurface">#1D2E22</color>
+    <color name="colorOnPrimary">#E3D7BC</color>
+    <color name="colorOnBackground">#E3D7BC</color>
+    <color name="colorOnSurface">#E3D7BC</color>
+
+    <color name="colorStatusBar">#0B1B14</color>
+
+</resources>

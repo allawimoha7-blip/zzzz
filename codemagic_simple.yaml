@@ -1,0 +1,19 @@
+workflows:
+  android-workflow:
+    name: Allawi PDF Reader - Android Workflow
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      java: 17
+    scripts:
+      - name: Set Android SDK location
+        script: |
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
+      - name: Make gradlew executable
+        script: |
+          chmod +x ./gradlew
+      - name: Build Android debug APK
+        script: |
+          ./gradlew :sample:assembleDebug
+    artifacts:
+      - sample/build/outputs/**/*.apk

@@ -1,0 +1,28 @@
+workflows:
+  android-workflow:
+    name: Allawi PDF Reader - Android Workflow
+    max_build_duration: 60
+    instance_type: linux_x2
+    environment:
+      groups:
+        # - keystore_credentials # Uncomment and configure if/when signing is set up
+      vars:
+        PACKAGE_NAME: "com.github.barteksc.sample"
+      java: 17
+    scripts:
+      - name: Set Android SDK location
+        script: |
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
+      - name: Build Android debug APK
+        script: |
+          ./gradlew :sample:assembleDebug
+    artifacts:
+      - sample/build/outputs/**/*.apk
+      - sample/build/outputs/**/mapping.txt
+    publishing:
+      email:
+        recipients:
+          - your_email@example.com
+        notify:
+          success: true
+          failure: true

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand palette: deep green, olive, beige, gold -->
+    <color name="brand_dark_green">#1B3A2B</color>
+    <color name="brand_olive">#6B6B2A</color>
+    <color name="brand_beige">#F2E8D5</color>
+    <color name="brand_gold">#C9A227</color>
+
+    <!-- Light (day) theme roles -->
+    <color name="colorPrimary">#1B3A2B</color>
+    <color name="colorPrimaryDark">#13291F</color>
+    <color name="colorAccent">#C9A227</color>
+
+    <color name="colorBackground">#F2E8D5</color>
+    <color name="colorSurface">#FBF6EC</color>
+    <color name="colorOnPrimary">#F2E8D5</color>
+    <color name="colorOnBackground">#1B3A2B</color>
+    <color name="colorOnSurface">#3A3A1F</color>
+
+    <color name="colorStatusBar">#13291F</color>
+
+</resources>
